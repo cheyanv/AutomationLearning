@@ -77,12 +77,29 @@ duplicateValue.put(dup1, 1);
 			System.out.println("Is not Palindrome");
 		}}
 	}
+	public void SecondLarge() {
+		Integer num[]= {1,5,9,18,4,12,16};
+		int largest=num[0];
+		int secondlargest=num[0];
+	for (int i = 1; i < num.length; i++) {
+	if (largest<num[i]) {
+    secondlargest=largest;
+    largest=num[i];
+	} else if (secondlargest<num[i] && largest!=num[i]) {
+secondlargest=num[i];
+	}	
+	}
+	System.out.println("Largest Number "+largest);
+	System.out.println("Second Number "+secondlargest);
+	}
+	
 	public static void main(String[] args) {
 		DuplicateWord s= new DuplicateWord();
 		s.duplicateArray();
-		s.DuplicateCount();
+	//	s.DuplicateCount();
 		s.DuplicateChara();
 		s.palindromestr();
+		s.SecondLarge();
 			}
 
 }
