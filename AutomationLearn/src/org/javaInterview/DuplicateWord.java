@@ -92,14 +92,23 @@ secondlargest=num[i];
 	System.out.println("Largest Number "+largest);
 	System.out.println("Second Number "+secondlargest);
 	}
+	public void removedup() {
+		Set<String> withoutdup= new LinkedHashSet<>();
+		for (String integer : dupval ) {
+		withoutdup.add(integer);
+						
+		}
+		System.out.println(withoutdup);
+	}
 	
 	public static void main(String[] args) {
 		DuplicateWord s= new DuplicateWord();
-		s.duplicateArray();
+	//	s.duplicateArray();
 	//	s.DuplicateCount();
-		s.DuplicateChara();
+	// s.DuplicateChara();
 		s.palindromestr();
 		s.SecondLarge();
+		s.removedup();
 			}
 
 }
