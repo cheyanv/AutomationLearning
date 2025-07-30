@@ -13,7 +13,7 @@ import java.util.TreeSet;
 public class DuplicateWord {
 	String dupval[]= {"Kannan","Rajan","Raja","raja","Rajan","Raja","VikiV","Rajar","nannaK"};
 	public void duplicateArray() {
-		String ar[]= {"Kanna","Rajan","Raja","raja","Rajan"};
+		String ar[]= {"Kanna","Rajan","Raja","raja","Rajan"};	
 		Set<String> duplicateFind=new TreeSet<>();
 		for (String string : ar) {
 			 duplicateFind.add(string);

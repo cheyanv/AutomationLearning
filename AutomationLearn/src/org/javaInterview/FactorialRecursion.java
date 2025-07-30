@@ -22,6 +22,15 @@ public class FactorialRecursion {
 		}
 		return n * RecursiveValu(n-1);
 	}
+	public void swapnumber() {
+		int a=20;
+		int b=45;
+		System.out.println("Where a = "+a+"Where b ="+b);
+		a=a+b;
+		b=a-b;
+		a=a-b;
+		System.out.println("Where a = "+a+"Where b ="+b);
+	}
 	
 public static void main(String[] args) {
 	FactorialRecursion fac=new FactorialRecursion();
@@ -31,5 +40,6 @@ public static void main(String[] args) {
 	int recursiveValu = fac.RecursiveValu(Fac_rec);
 	System.out.println("The recursive Value "+ Fac_rec+ ' ' +"Value "+ recursiveValu);
 	fac.recursion(Fac_rec);
+	fac.swapnumber();
 }
 }
